@@ -4,7 +4,7 @@ const port = process.env.PORT || 8000;
 require('./db')();
 const duckRouter = require('./routes/duckRoutes');
 const errorHandler = require('./middlewares/errorHandler');
-
+require('dotenv').config()
 
 
 // Greet on root route
